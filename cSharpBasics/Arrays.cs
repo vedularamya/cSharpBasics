@@ -4,23 +4,35 @@ using System.Text;
 
 namespace cSharpBasics
 {
-    public static class Arrays
+    public  static class MyArrays
     {
         static int[] employeeAge;
-        static Arrays()
+
+        static MyArrays()
         {
             employeeAge = new int[100];
-
         }
+
         public static void AddElementstoArray()
         {
+            
             Random randomAge = new Random();
             for (int i = 0; i < 100; i++)
             {
                 employeeAge[i] = randomAge.Next(30,70);
             }
         }
-        public static void IterateArray()
+        public  static void IterateArray()
+        {
+            int i = 1;
+            foreach (var item in employeeAge)
+            {
+                Console.WriteLine("Employ{0} age is {1}", i, item);
+                i++;
+            }
+        }
+
+        public static void AddRangeToList()
         {
             int i = 1;
             foreach (var item in employeeAge)

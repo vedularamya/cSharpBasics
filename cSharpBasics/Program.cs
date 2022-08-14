@@ -6,8 +6,12 @@ namespace cSharpBasics
     {
         static void Main(string[] args)
         {
-            Arrays.AddElementstoArray();
-            Arrays.IterateArray();
+
+            MyArrays.IterateArray();
+            MyArrays.AddElementstoArray();
+
+         
+
             Console.ReadLine();
         }
     }
