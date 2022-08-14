@@ -1,0 +1,14 @@
+C:\Ramya\Learning\cSharpBasics\bin\Debug\netcoreapp3.1\cSharpBasics.exe
+C:\Ramya\Learning\cSharpBasics\bin\Debug\netcoreapp3.1\cSharpBasics.deps.json
+C:\Ramya\Learning\cSharpBasics\bin\Debug\netcoreapp3.1\cSharpBasics.runtimeconfig.json
+C:\Ramya\Learning\cSharpBasics\bin\Debug\netcoreapp3.1\cSharpBasics.runtimeconfig.dev.json
+C:\Ramya\Learning\cSharpBasics\bin\Debug\netcoreapp3.1\cSharpBasics.dll
+C:\Ramya\Learning\cSharpBasics\bin\Debug\netcoreapp3.1\cSharpBasics.pdb
+C:\Ramya\Learning\cSharpBasics\obj\Debug\netcoreapp3.1\cSharpBasics.csproj.AssemblyReference.cache
+C:\Ramya\Learning\cSharpBasics\obj\Debug\netcoreapp3.1\cSharpBasics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ramya\Learning\cSharpBasics\obj\Debug\netcoreapp3.1\cSharpBasics.AssemblyInfoInputs.cache
+C:\Ramya\Learning\cSharpBasics\obj\Debug\netcoreapp3.1\cSharpBasics.AssemblyInfo.cs
+C:\Ramya\Learning\cSharpBasics\obj\Debug\netcoreapp3.1\cSharpBasics.csproj.CoreCompileInputs.cache
+C:\Ramya\Learning\cSharpBasics\obj\Debug\netcoreapp3.1\cSharpBasics.dll
+C:\Ramya\Learning\cSharpBasics\obj\Debug\netcoreapp3.1\cSharpBasics.pdb
+C:\Ramya\Learning\cSharpBasics\obj\Debug\netcoreapp3.1\cSharpBasics.genruntimeconfig.cache
