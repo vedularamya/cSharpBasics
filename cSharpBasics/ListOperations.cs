@@ -4,6 +4,9 @@ using System.Text;
 
 namespace cSharpBasics
 {
+    /// <summary>
+    /// This is a class for list operations
+    /// </summary>
     public static class ListOperations
     {
         static List<int> numberList;
