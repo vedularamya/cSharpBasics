@@ -1,12 +1,10 @@
 ﻿
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace cSharpBasics
 {
-    public static class Repractice
+    public static class RePractice
     {
         public static int Absolute()
         {
