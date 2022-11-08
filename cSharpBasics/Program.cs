@@ -2,21 +2,24 @@
 
 namespace cSharpBasics
 {
-    class Program
+      class Program
     {
         static void Main(string[] args)
         {
+            // var x= Console.ReadLine();
 
-            //MyArrays.IterateArray();
-            //MyArrays.AddElementstoArray();
+            Repractice.StringTriple();
 
-            ListOperations.AddToList();
-            //ListOperations.PrintList();
-            ListOperations.FewOps();
-            ListOperations.RemoveElements();
-            ListOperations.PrintList();
 
             Console.ReadLine();
         }
+      
     }
+    
 }
+
+
+    
+
+
+    
