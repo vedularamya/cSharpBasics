@@ -11,7 +11,9 @@ namespace cSharpBasics
             TestingSpecialSortArray();
             Console.ReadLine();
         }
-
+        /// <summary>
+        /// This is a test method for Array Sort
+        /// </summary>
         private static void TestingSpecialSortArray()
         {
             int[] input = new int[] { -5, 236, 120, 70, -5, -5, 698, 280 };
