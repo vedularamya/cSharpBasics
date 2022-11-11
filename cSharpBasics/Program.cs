@@ -10,13 +10,13 @@ namespace cSharpBasics
            // TestingStrictlyIncreasing();
             //TestingSumOfArrayOfArrays();
             //TestingSpecialSortArray();
+            //var input = new int[] { 1, 2, 3, 4, 3, };
 
-            //Console.WriteLine(TeachingSession.RemoveBracesAndReverseString(Console.ReadLine()));
-
-
-            //TestingCheckIfExists();
-            Console.WriteLine(TeachingSession.RemoveBracesAndReverseStringV2(Console.ReadLine()));
-            
+           // Console.WriteLine(RePractice.StrictlyIncreasingArray(input));
+            int[] input = new int[] { -5,120,236,-5,-5,698,70,280};
+            var SortedArray = RePractice.SortArray(input);
+            foreach (var item in SortedArray) 
+                Console.WriteLine(item);    
             Console.ReadLine();
         }
         internal static int[] MultiplyArrayWithItsLength(int[] nums)

@@ -355,10 +355,28 @@ namespace cSharpBasics
                 Console.WriteLine(" {0}{0}{0}{0}",s);
             }
         }
-
-
-
-
+public static bool StrictlyIncreasingArray(int[] input)
+        {
+            foreach (var number in input)
+            { 
+                int matchcount = 0;
+                foreach (var number1 in input)
+                {
+                    if (number == number1)
+                    {
+                        matchcount++;
+                        if (matchcount > 1) return false;
+                    }
+                }
+            }
+            return true;
+        }
+public static  int[] SortArray(int[] input)
+        {
+            var sortedarraywithoutnagativefive = input.Where(x => x != -5).OrderBy(X => X).ToArray();
+            int sortednumbercount = 0;
+            return input.Select(x => x >= 0 ? sortedarraywithoutnagativefive[sortednumbercount++] : -5).ToArray();
+        }
 
 
 
