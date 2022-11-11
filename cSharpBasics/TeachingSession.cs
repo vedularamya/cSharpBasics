@@ -66,5 +66,59 @@ namespace cSharpBasics
 
         }
 
+        internal static string RemoveBracesAndReverseString(string input)
+        {
+
+            int leftIndex = input.LastIndexOf("(");
+
+            //If the index is negative, the string doesn't any paranthesis.
+            //Hence return input as-is, no work required
+            if (leftIndex < 0) return input;
+            while (leftIndex > 0)
+            {
+                //Step1 - Find index of matching closing paranthesis
+                int rightIndex = input.IndexOf(")", leftIndex);
+               
+                input = input.Substring(0,leftIndex) 
+                    + new string(input.Substring(leftIndex + 1, rightIndex - leftIndex -1).Reverse().ToArray())
+                    + input.Substring(rightIndex+1);
+                
+                
+                leftIndex = input.LastIndexOf("(");
+            }
+
+            return input;
+        }
+
+        internal static string RemoveBracesAndReverseStringV2(string input)
+        {
+
+            int leftIndex = input.LastIndexOf("(");
+
+            //If the index is negative, the string doesn't any paranthesis.
+            //Hence return input as-is, no work required
+            if (leftIndex < 0) return input;
+            //Step1 - Find index of matching closing paranthesis
+            int rightIndex = input.IndexOf(")", leftIndex);
+
+            input = input.Substring(0, leftIndex)
+                + new string(input.Substring(leftIndex + 1, rightIndex - leftIndex - 1).Reverse().ToArray())
+                + input.Substring(rightIndex + 1);
+
+            return RemoveBracesAndReverseStringV2(input);
+
+        }
+
+        internal static bool CheckIfExists(int[] givenArray, int input)
+        {
+            foreach (int number in givenArray)
+            { 
+                if (number == input) return true;
+            }
+
+            return false;
+
+        }
+
     }
 }

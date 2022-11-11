@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace cSharpBasics
 {
@@ -6,10 +7,35 @@ namespace cSharpBasics
     {
         static void Main(string[] args)
         {
-            //TestingStrictlyIncreasing();
+           // TestingStrictlyIncreasing();
             //TestingSumOfArrayOfArrays();
-            TestingSpecialSortArray();
+            //TestingSpecialSortArray();
+
+            //Console.WriteLine(TeachingSession.RemoveBracesAndReverseString(Console.ReadLine()));
+
+
+            //TestingCheckIfExists();
+            Console.WriteLine(TeachingSession.RemoveBracesAndReverseStringV2(Console.ReadLine()));
+            
             Console.ReadLine();
+        }
+        internal static int[] MultiplyArrayWithItsLength(int[] nums)
+        {
+            return nums.Select(num => num * nums.Length).ToArray();
+        }
+        
+        private static void TestingCheckIfExists()
+        {
+            int[] employeeArray = { 1, 50, 25, 90, 180 };
+            Console.WriteLine("Enter an employee number");
+            int employeeNumber = Convert.ToInt32(Console.ReadLine());
+
+            while (employeeNumber != -1) ;
+            {
+                Console.WriteLine(TeachingSession.CheckIfExists(employeeArray, employeeNumber));
+                Console.WriteLine("Enter an employee number");
+                employeeNumber = Convert.ToInt32(Console.ReadLine());
+            }
         }
 
         private static void TestingSpecialSortArray()
@@ -39,6 +65,9 @@ namespace cSharpBasics
             Console.WriteLine(TeachingSession.SumOfArrayOfArrays(input));
 
         }
+
+    
+
 
     }
 
