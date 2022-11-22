@@ -6,6 +6,8 @@ namespace cSharpBasics
 {
     public static class RePractice
     {
+        private const string V = "javascrpit";
+
         public static int Absolute()
         {
             Console.WriteLine("Enter the input numbers");
@@ -342,23 +344,23 @@ namespace cSharpBasics
                 Console.Write(' ');
             }
         }
-        public static void  StringTriple()
+        public static void StringTriple()
         {
-           string line =Console.ReadLine();
-            if(line.Length<4)
+            string line = Console.ReadLine();
+            if (line.Length < 4)
             {
                 Console.WriteLine(line);
             }
             else
             {
-                string s =line.Substring(line.Length-4,4);
-                Console.WriteLine(" {0}{0}{0}{0}",s);
+                string s = line.Substring(line.Length - 4, 4);
+                Console.WriteLine(" {0}{0}{0}{0}", s);
             }
         }
-public static bool StrictlyIncreasingArray(int[] input)
+        public static bool StrictlyIncreasingArray(int[] input)
         {
             foreach (var number in input)
-            { 
+            {
                 int matchcount = 0;
                 foreach (var number1 in input)
                 {
@@ -371,23 +373,86 @@ public static bool StrictlyIncreasingArray(int[] input)
             }
             return true;
         }
-public static  int[] SortArray(int[] input)
+        public static int[] SortArray(int[] input)
         {
             var sortedarraywithoutnagativefive = input.Where(x => x != -5).OrderBy(X => X).ToArray();
             int sortednumbercount = 0;
             return input.Select(x => x >= 0 ? sortedarraywithoutnagativefive[sortednumbercount++] : -5).ToArray();
         }
 
+        public static int test(string str1, char uc, char lc)
+        {
+            return str1.Split(uc, lc).Length - 1;
+        }
 
+        public static string Test(string word)
+        {
+            int length = word.Length;
+            if (length % 2 == 0)
+            {
+                return "Even length";
 
+            }
+            else
+            {
+                return "odd length";
+            }
+        }
+        public static int NthOddNumber(int n)
+        {
+            return n * 2 - 1;
+        }
+
+        public static bool plural(string word)
+        {
+            return word.EndsWith("s");
+        }
+        public static int SumOFSquare(int[] nums)
+        {
+            return nums.Sum(n => n * n);
+        }
+
+        public static double[] CumulativeSum(double[] nums)
+        {
+            for (int i = 1; i < nums.Length; i++)
+            {
+                nums[i] = nums[i] + nums[i - 1];
+            }
+            return nums;
+        }
+
+        public static void PrintArray(double[] nums, string message)
+        {
+            Console.WriteLine(message);
+            for (int i = 0; i < nums.Length; i++)
+            {
+                Console.Write(nums[i] + " ");
+            }
+            Console.Write("\n");
+        }
+
+       public static string  GetTheNumberAndDigit(string text)
+        {
+            int   countLetters = text.Count(char.IsLetter);
+            int countDigits = text.Count(char.IsDigit);
+            return "number of letters: " + countLetters + "number of digits:" + countDigits; 
+        }
+
+public static bool ReverseTheBoolean(bool boolean)
+        {
+            return boolean;
+        }
+
+        public static string CountOfPosAndNeg(int[] nums)
+        {
+            var pos = nums.Where(n => n > 0).Count();
+            var neg = nums.Where(n => n < 0).Count();
+            return "\n number of pos numbers:" + pos + "\n number of neg numbers:" + neg;  
+
+        }
 
 
     }
-
-
-
-
-
 }
 
 

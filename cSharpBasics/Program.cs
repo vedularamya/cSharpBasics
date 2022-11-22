@@ -7,18 +7,25 @@ namespace cSharpBasics
     {
         static void Main(string[] args)
         {
-           // TestingStrictlyIncreasing();
-            //TestingSumOfArrayOfArrays();
-            //TestingSpecialSortArray();
-            //var input = new int[] { 1, 2, 3, 4, 3, };
+            int[] nums = { -4, -6, 7 - 4, 7, 3 };
+            Console.WriteLine(" original given array elements:");
+            foreach ( var item in nums) 
+            {
+                Console.Write(item.ToString() + " ");
+                Console.WriteLine(RePractice.CountOfPosAndNeg(nums));
 
-           // Console.WriteLine(RePractice.StrictlyIncreasingArray(input));
-            int[] input = new int[] { -5,120,236,-5,-5,698,70,280};
-            var SortedArray = RePractice.SortArray(input);
-            foreach (var item in SortedArray) 
-                Console.WriteLine(item);    
-            Console.ReadLine();
+
+            }
+            
+            int[] nums2 = { };
+            Console.WriteLine(" original given array elements:");
+            foreach( var item in nums2)
+            {
+                Console.Write(item.ToString() + " ");
+            }
         }
+        
+        
         internal static int[] MultiplyArrayWithItsLength(int[] nums)
         {
             return nums.Select(num => num * nums.Length).ToArray();
@@ -30,7 +37,7 @@ namespace cSharpBasics
             Console.WriteLine("Enter an employee number");
             int employeeNumber = Convert.ToInt32(Console.ReadLine());
 
-            while (employeeNumber != -1) ;
+            while (employeeNumber != -1) 
             {
                 Console.WriteLine(TeachingSession.CheckIfExists(employeeArray, employeeNumber));
                 Console.WriteLine("Enter an employee number");
